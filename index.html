@@ -33,7 +33,6 @@
     min-width: 1280px;
   }
 
-  /* ---------- HEADER / SUMMARY ---------- */
   .header {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -96,7 +95,6 @@
   }
   .goals li strong { color: var(--ink); }
 
-  /* ---------- TIMELINE ---------- */
   .timeline-wrap {
     position: relative;
     margin-top: 8px;
@@ -131,7 +129,6 @@
   }
   .corner { border-left: none; }
 
-  /* category band */
   .band-label {
     grid-column: 1 / -1;
     padding: 18px 0 8px 0;
@@ -143,13 +140,12 @@
     border-bottom: 1px solid var(--line);
   }
 
-  /* initiative row */
   .row {
     display: grid;
     grid-template-columns: 280px repeat(8, 1fr);
     border-bottom: 1px solid var(--line);
     position: relative;
-    min-height: 520px;
+    min-height: 320px;
   }
   .row .cell {
     border-left: 1px solid var(--line);
@@ -189,7 +185,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* TODAY vertical line (drawn over the grid) */
   .today-line {
     position: absolute;
     top: 0;
@@ -200,13 +195,12 @@
     z-index: 2;
   }
 
-  /* Project card placed inside a cell — spans ~2 quarter columns wide */
   .project {
     position: absolute;
-    top: 14px;
-    width: 190%;
-    left: 5%;
-    padding: 12px 14px 14px 14px;
+    top: 12px;
+    width: 240%;
+    left: 4%;
+    padding: 10px 12px 12px 12px;
     border-radius: 4px;
     border: 1.5px dashed var(--blue);
     background: var(--blue-bg);
@@ -255,13 +249,11 @@
     line-height: 1.4;
   }
 
-  /* vertical-position variants — used so each card's date pill sits at its own y */
-  .project.lane-1 { top: 20px; }
-  .project.lane-2 { top: 190px; }
-  .project.lane-3 { top: 360px; }
-  .project.lane-4 { top: 530px; }
+  .project.lane-1 { top: 14px; }
+  .project.lane-2 { top: 124px; }
+  .project.lane-3 { top: 234px; }
+  .project.lane-4 { top: 344px; }
 
-  /* footer note */
   .footnote {
     margin-top: 18px;
     font-size: 11px;
@@ -271,7 +263,6 @@
 </head>
 <body>
 
-  <!-- ===== HEADER / SUMMARY ===== -->
   <div class="header">
     <div>
       <div class="eyebrow">Revenue Systems · Growth &amp; Commerce Roadmap</div>
@@ -300,10 +291,8 @@
     </div>
   </div>
 
-  <!-- ===== TIMELINE ===== -->
   <div class="timeline-wrap">
 
-    <!-- Quarter headers -->
     <div class="timeline-grid">
       <div class="corner"></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q1</span></div>
@@ -319,12 +308,10 @@
       <div class="qh"><span class="yr">2027</span><span class="q">Q4</span></div>
     </div>
 
-    <!-- Section label -->
     <div class="timeline-grid">
       <div class="band-label">&nbsp;&nbsp;AI-DRIVEN EMAIL ORCHESTRATION</div>
     </div>
 
-    <!-- Initiative row: Orchestration milestones -->
     <div class="row">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
 
@@ -359,7 +346,6 @@
       <div class="cell"></div>
     </div>
 
-    <!-- Initiative row: Product coverage -->
     <div class="row row-green">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
 
@@ -396,7 +382,6 @@
     </div>
   </div>
 
-  <!-- ===== SECOND INITIATIVE: SALES OPPORTUNITY RANKER ===== -->
   <div class="header" style="margin-top: 36px;">
     <div>
       <div class="eyebrow">Revenue Systems · Sales Orchestration</div>
@@ -428,6 +413,7 @@
   </div>
 
   <div class="timeline-wrap">
+
     <div class="timeline-grid">
       <div class="corner"></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q1</span></div>
@@ -447,7 +433,7 @@
       <div class="band-label">&nbsp;&nbsp;SALES OPPORTUNITY RANKER</div>
     </div>
 
-    <div class="row" style="min-height: 700px;">
+    <div class="row" style="min-height: 450px;">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
 
       <div class="info">
