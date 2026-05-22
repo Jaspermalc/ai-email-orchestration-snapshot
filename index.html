@@ -32,233 +32,58 @@
     padding: 32px 40px 48px 40px;
     min-width: 1280px;
   }
-
-  .header {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 32px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 28px;
-  }
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 11px;
-    color: var(--muted);
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  h1 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    line-height: 1.25;
-  }
-  .definition {
-    font-size: 14px;
-    color: #333;
-    margin: 0 0 14px 0;
-  }
-  .meta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    font-size: 12px;
-    color: var(--muted);
-  }
+  .header { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  h1 { font-size: 22px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.25; }
+  .definition { font-size: 14px; color: #333; margin: 0 0 14px 0; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; color: var(--muted); }
   .meta-row strong { color: var(--ink); font-weight: 600; }
-  .tag {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-    background: #fde6e1;
-    color: #b3402d;
-    font-size: 11px;
-    font-weight: 600;
-  }
-  .goals h3 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin: 0 0 10px 0;
-    font-weight: 600;
-  }
-  .goals ol {
-    margin: 0;
-    padding-left: 18px;
-  }
-  .goals li {
-    margin-bottom: 6px;
-    font-size: 13px;
-  }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #fde6e1; color: #b3402d; font-size: 11px; font-weight: 600; }
+  .goals h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 10px 0; font-weight: 600; }
+  .goals ol { margin: 0; padding-left: 18px; }
+  .goals li { margin-bottom: 6px; font-size: 13px; }
   .goals li strong { color: var(--ink); }
-
-  .timeline-wrap {
-    position: relative;
-    margin-top: 8px;
-  }
-  .timeline-grid {
-    display: grid;
-    grid-template-columns: 280px repeat(8, 1fr);
-    border-bottom: 1px solid var(--line);
-  }
-  .qh {
-    padding: 4px 0 10px 0;
-    text-align: center;
-    font-size: 12px;
-    color: var(--muted);
-    border-left: 1px solid var(--line);
-    position: relative;
-  }
+  .timeline-wrap { position: relative; margin-top: 8px; }
+  .timeline-grid { display: grid; grid-template-columns: 280px repeat(8, 1fr); border-bottom: 1px solid var(--line); }
+  .qh { padding: 4px 0 10px 0; text-align: center; font-size: 12px; color: var(--muted); border-left: 1px solid var(--line); position: relative; }
   .qh .yr { display: block; font-size: 11px; color: var(--muted); margin-bottom: 2px; }
   .qh .q  { display: block; font-weight: 600; color: #333; }
-  .qh.today-col .today-pill {
-    position: absolute;
-    top: -22px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--today);
-    color: white;
-    font-size: 10px;
-    font-weight: 700;
-    padding: 3px 8px;
-    border-radius: 4px;
-    letter-spacing: 0.05em;
-  }
+  .qh.today-col .today-pill { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); background: var(--today); color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.05em; }
   .corner { border-left: none; }
-
-  .band-label {
-    grid-column: 1 / -1;
-    padding: 18px 0 8px 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    font-weight: 700;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .row {
-    display: grid;
-    grid-template-columns: 280px repeat(8, 1fr);
-    border-bottom: 1px solid var(--line);
-    position: relative;
-    min-height: 320px;
-  }
-  .row .cell {
-    border-left: 1px solid var(--line);
-    position: relative;
-  }
-  .row .info {
-    padding: 14px 14px 14px 0;
-    border-left: none;
-    border-left: 4px solid var(--blue);
-    padding-left: 14px;
-  }
+  .band-label { grid-column: 1 / -1; padding: 18px 0 8px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 700; border-bottom: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 280px repeat(8, 1fr); border-bottom: 1px solid var(--line); position: relative; min-height: 320px; }
+  .row .cell { border-left: 1px solid var(--line); position: relative; }
+  .row .info { padding: 14px 14px 14px 0; border-left: 4px solid var(--blue); padding-left: 14px; }
   .row.row-green .info { border-left-color: var(--green); }
-  .row .info .category {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--blue);
-    font-weight: 700;
-    margin-bottom: 4px;
-  }
+  .row .info .category { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); font-weight: 700; margin-bottom: 4px; }
   .row.row-green .info .category { color: var(--green); }
-  .row .info h2 {
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0 0 6px 0;
-    line-height: 1.3;
-  }
-  .row .info p {
-    margin: 0 0 8px 0;
-    font-size: 12.5px;
-    color: #333;
-  }
-  .row .info .dates {
-    font-size: 11px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .today-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    border-left: 2px dashed var(--today);
-    pointer-events: none;
-    z-index: 2;
-  }
-
-  .project {
-    position: absolute;
-    top: 12px;
-    width: 240%;
-    left: 4%;
-    padding: 10px 12px 12px 12px;
-    border-radius: 4px;
-    border: 1.5px dashed var(--blue);
-    background: var(--blue-bg);
-    font-size: 12px;
-    z-index: 1;
-  }
+  .row .info h2 { font-size: 15px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.3; }
+  .row .info p { margin: 0 0 8px 0; font-size: 12.5px; color: #333; }
+  .row .info .dates { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .today-line { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed var(--today); pointer-events: none; z-index: 2; }
+  .project { position: absolute; top: 12px; width: 240%; left: 4%; padding: 10px 12px 12px 12px; border-radius: 4px; border: 1.5px dashed var(--blue); background: var(--blue-bg); font-size: 12px; z-index: 1; }
   .project.green { border-color: var(--green); background: var(--green-bg); }
   .project.purple { border-color: var(--purple); background: var(--purple-bg); }
   .project.amber { border-color: var(--amber); background: var(--amber-bg); }
-  .project .ptag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    margin-bottom: 6px;
-  }
+  .project .ptag { display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 6px; }
   .project .ptag .star { color: var(--blue); font-size: 13px; }
   .project.green .ptag .star { color: var(--green); }
   .project.purple .ptag .star { color: var(--purple); }
   .project.amber .ptag .star { color: var(--amber); }
-  .project .pill {
-    background: var(--blue);
-    color: white;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: 700;
-    margin-left: 4px;
-  }
+  .project .pill { background: var(--blue); color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 700; margin-left: 4px; }
   .project.green .pill { background: var(--green); }
   .project.purple .pill { background: var(--purple); }
   .project.amber .pill { background: var(--amber); }
-  .project .ptitle {
-    color: var(--blue);
-    font-weight: 700;
-    margin-right: 4px;
-  }
+  .project .ptitle { color: var(--blue); font-weight: 700; margin-right: 4px; }
   .project.green .ptitle { color: var(--green); }
   .project.purple .ptitle { color: var(--purple); }
   .project.amber .ptitle { color: var(--amber); }
-  .project .pbody {
-    color: #222;
-    font-size: 11.5px;
-    line-height: 1.4;
-  }
-
+  .project .pbody { color: #222; font-size: 11.5px; line-height: 1.4; }
   .project.lane-1 { top: 14px; }
   .project.lane-2 { top: 124px; }
   .project.lane-3 { top: 234px; }
   .project.lane-4 { top: 344px; }
-
-  .footnote {
-    margin-top: 18px;
-    font-size: 11px;
-    color: var(--muted);
-  }
+  .footnote { margin-top: 18px; font-size: 11px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -267,12 +92,7 @@
     <div>
       <div class="eyebrow">Revenue Systems · Growth &amp; Commerce Roadmap</div>
       <h1>AI-Driven Email Orchestration</h1>
-      <p class="definition">
-        Build an AI-driven orchestration and content system that coordinates
-        revenue communications across sales, product, and programmatic email —
-        so the right message reaches the right Gustomer at the right time,
-        with AI generating content and Iterable orchestrating delivery.
-      </p>
+      <p class="definition">Build an AI-driven orchestration and content system that coordinates revenue communications across sales, product, and programmatic email — so the right message reaches the right Gustomer at the right time, with AI generating content and Iterable orchestrating delivery.</p>
       <div class="meta-row">
         <span><strong>Owner</strong>&nbsp;Revenue Systems</span>
         <span><strong>Author</strong>&nbsp;Sean Counceller</span>
@@ -292,14 +112,10 @@
   </div>
 
   <div class="timeline-wrap">
-
     <div class="timeline-grid">
       <div class="corner"></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q1</span></div>
-      <div class="qh today-col">
-        <span class="today-pill">TODAY</span>
-        <span class="yr">2026</span><span class="q">Q2</span>
-      </div>
+      <div class="qh today-col"><span class="today-pill">TODAY</span><span class="yr">2026</span><span class="q">Q2</span></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q3</span></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q4</span></div>
       <div class="qh"><span class="yr">2027</span><span class="q">Q1</span></div>
@@ -312,22 +128,19 @@
       <div class="band-label">&nbsp;&nbsp;AI-DRIVEN EMAIL ORCHESTRATION</div>
     </div>
 
-    <!-- Foundation / Build & Launch row -->
     <div class="row" style="min-height: 460px;">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
-
       <div class="info">
         <div class="category">FOUNDATION</div>
         <h2>Build &amp; Launch</h2>
         <p>Architecture lock → service MVP → first live sends. Build milestones leading into the Orchestration phase.</p>
         <div class="dates">MAY 22 '26 → AUG 1 '26</div>
       </div>
-
       <div class="cell"></div>
       <div class="cell">
         <div class="project lane-1" style="left: 55%; width: 170%;">
           <div class="ptag"><span class="star">★</span><span class="ptitle">ARCHITECTURE LOCKED</span><span class="pill">MAY 22 '26</span></div>
-          <div class="pbody"><strong>Service design and integration plan signed off</strong> at today's admin review.</div>
+          <div class="pbody"><strong>Architecture and technical strategy locked.</strong></div>
         </div>
         <div class="project green lane-2" style="left: 78%; width: 170%;">
           <div class="ptag"><span class="star">★</span><span class="ptitle">SERVICE MVP</span><span class="pill">JUN 8 '26</span></div>
@@ -353,14 +166,12 @@
 
     <div class="row">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
-
       <div class="info">
         <div class="category">ORCHESTRATION</div>
         <h2>Programmatic Email Orchestration</h2>
         <p>Sequenced rollout to a fully AI-driven, UCP-governed email system: audience triggers → AI content → governance → orchestration.</p>
         <div class="dates">MAY 1 '26 → OCT 31 '26</div>
       </div>
-
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell">
@@ -387,14 +198,12 @@
 
     <div class="row row-green">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
-
       <div class="info">
         <div class="category">PRODUCT COVERAGE</div>
         <h2>Programmatic Email — Product Rollout</h2>
         <p>Phased product onboarding to the new system. Each new product is a skill-file addition, not an engineering build.</p>
         <div class="dates">MAY 1 '26 → JAN 31 '27</div>
       </div>
-
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell">
@@ -425,13 +234,7 @@
     <div>
       <div class="eyebrow">Revenue Systems · Sales Orchestration</div>
       <h1>Sales Opportunity Ranker</h1>
-      <p class="definition">
-        A ranking system that decides which opportunities from Hightouch
-        audiences are prioritized for Sales. The most impactful audiences are
-        surfaced automatically, so App and PMM teams can launch and test new
-        audiences without manual triage — and Sales gets the right
-        opportunity at the right moment.
-      </p>
+      <p class="definition">A ranking system that decides which opportunities from Hightouch audiences are prioritized for Sales. The most impactful audiences are surfaced automatically, so App and PMM teams can launch and test new audiences without manual triage — and Sales gets the right opportunity at the right moment.</p>
       <div class="meta-row">
         <span><strong>Owner</strong>&nbsp;Revenue Systems</span>
         <span><strong>DRI</strong>&nbsp;Sean Counceller</span>
@@ -452,14 +255,10 @@
   </div>
 
   <div class="timeline-wrap">
-
     <div class="timeline-grid">
       <div class="corner"></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q1</span></div>
-      <div class="qh today-col">
-        <span class="today-pill">TODAY</span>
-        <span class="yr">2026</span><span class="q">Q2</span>
-      </div>
+      <div class="qh today-col"><span class="today-pill">TODAY</span><span class="yr">2026</span><span class="q">Q2</span></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q3</span></div>
       <div class="qh"><span class="yr">2026</span><span class="q">Q4</span></div>
       <div class="qh"><span class="yr">2027</span><span class="q">Q1</span></div>
@@ -474,14 +273,12 @@
 
     <div class="row" style="min-height: 450px;">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
-
       <div class="info">
         <div class="category">WAVE 1</div>
         <h2>Initial Migration (Apr–Jul '26)</h2>
         <p>Top-ranked products and audiences migrating into the ranker, each routed to its owning sales team via SFDC.</p>
         <div class="dates">APR 30 '26 → JUL 1 '26</div>
       </div>
-
       <div class="cell"></div>
       <div class="cell">
         <div class="project lane-1" style="left: 33%;">
@@ -512,14 +309,12 @@
 
     <div class="row row-green">
       <div class="today-line" style="left: calc(280px + ( (100% - 280px) / 8 ) * 1.55);"></div>
-
       <div class="info">
         <div class="category">WAVE 2</div>
         <h2>Final Migration + Open Items (Aug '26+)</h2>
         <p>Lower-priority products and items with open decisions. 8/1 is the initiative's delivery milestone: signals routed to SFDC for all in-scope products.</p>
         <div class="dates">AUG 1 '26 → TBD</div>
       </div>
-
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell">
@@ -545,9 +340,7 @@
     </div>
   </div>
 
-  <div class="footnote">
-    First draft — sourced from the AI-Driven Email Orchestration Vision (Revenue Systems, April 2026), the Sales Opportunity Ranker initiative in Notion (Central R&amp;D Roadmap · FY27 Q2 delivery), and the ranked Product / Audience migration table.
-  </div>
+  <div class="footnote">First draft — sourced from the AI-Driven Email Orchestration Vision (Revenue Systems, April 2026), the Sales Opportunity Ranker initiative in Notion (Central R&amp;D Roadmap · FY27 Q2 delivery), and the ranked Product / Audience migration table.</div>
 
 </body>
 </html>
